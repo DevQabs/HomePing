@@ -9,13 +9,13 @@ body {
 }
 
 #Tiles {
-  width: 630px;
-  height: 630px;
+  width: 840px;
+  height: 840px;
   background-color: aqua;
   position: absolute;
   left: 50%;
   top: -100px;
-  margin-left: -315px;
+  margin-left: -420px;
 
   -webkit-transform: rotateZ(0deg);
   transform: rotateX(75deg) rotateY(0deg) rotateZ(45deg);

@@ -10,7 +10,7 @@ const Tile = styled.div`
 
   &:before {
     position: absolute;
-    content: '';
+    content: '${(props) => props.index}';
     width: 200px;
     height: 200px;
     background: white;
@@ -33,12 +33,9 @@ function App() {
       <p>Hover over</p>
       <div id='Tiles'>
         {[...Array(4)].map((e, i) => {
-          return (
-            // <div className='tile' key={`tile_${i}`}>
-            //   aaaaa
-            // </div>
-            <Tile />
-          );
+          return [...Array(4)].map((se, j) => {
+            return <Tile index={`${i}_${j}`} />;
+          });
         })}
       </div>
 
